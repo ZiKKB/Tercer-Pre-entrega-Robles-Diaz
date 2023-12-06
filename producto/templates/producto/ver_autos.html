@@ -1,0 +1,9 @@
+{% extends 'producto/index.html' %}
+
+{% block contenido %}
+     {% for auto in Auto %}
+       <h4> {{auto.nombre}}</h4>
+       <p> {{auto.modelo}}</p>
+       <p> {{auto.color}}</p>
+    {% endfor %}
+{% endblock contenido %}

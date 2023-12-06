@@ -1,0 +1,18 @@
+{% extends 'cliente/index.html' %}
+
+{% block contenido_titulo %}
+    cargar auto
+{% endblock contenido_titulo %}
+
+
+{% block contenido %}
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><button type="submit">Agregar</button></p>
+    </form>
+{% endblock contenido %}
+
+
+
+

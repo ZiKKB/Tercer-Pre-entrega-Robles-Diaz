@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block contenido_titulo %}
+    Consecionario RobCars
+{% endblock contenido_titulo %}
+
+{% block contenido %}
+    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'core/img/descarga.jpg' %}" alt="..." /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">RobCars</h1>
+            <p>Hola! Somos RobCars un consecionario de zona norte ubicado en San Isidro, contamos con un amplio catalogo de autos de alta gama para la comercializacion inmediata. Tenemos mas de 45 años de historia y experiencia en el rubro automotor</p>
+            <a class="btn btn-primary" href="#!">Contactanos!</a>
+        </div>
+    </div>
+    <!-- Call to Action-->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+        <div class="card-body"><p class="text-white m-0">Nos importa mucho tu experiencia con nosotros!</p></div>
+    </div>
+    <!-- Content Row-->
+    <div class="row gx-4 gx-lg-5">
+
+        {% include 'core/card.html' with titulo="Tarjeta 1" %}
+        {% include 'core/card.html' with titulo="Tarjeta 2" %}
+        {% include 'core/card.html' with titulo="Tarjeta 3" %}
+
+    </div>
+
+{% endblock contenido %}
