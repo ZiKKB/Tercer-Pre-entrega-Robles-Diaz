@@ -1,14 +1,14 @@
 {% extends 'cliente/index.html' %}
 
 {% block contenido_titulo %}
-    ver autos
+    Nuestros Autos
 {% endblock contenido_titulo %}
 
 
 {% block contenido %}
     {% for auto in Auto %}
-       <h5>{{auto.marca}}</h5>
-       <p> {{auto.modelo}}</p>
-       <p> {{auto.color}}</p>
+       <h5>Marca: {{auto.marca}}</h5>
+       <p> Modelo: {{auto.modelo}}</p>
+       <p>Color: {{auto.color}}</p>
     {% endfor %}
 {% endblock contenido %}

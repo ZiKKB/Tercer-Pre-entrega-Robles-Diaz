@@ -2,16 +2,16 @@
 {% load static %}
 
 {% block contenido_titulo %}
-    Consecionario RobCars
+    Consecionario Hascar
 {% endblock contenido_titulo %}
 
 {% block contenido %}
     <!-- Heading Row-->
     <div class="row gx-4 gx-lg-5 align-items-center my-5">
-        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'core/img/descarga.jpg' %}" alt="..." /></div>
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'core/img/hascar.jpg' %}" alt="..." /></div>
         <div class="col-lg-5">
-            <h1 class="font-weight-light">RobCars</h1>
-            <p>Hola! Somos RobCars un consecionario de zona norte ubicado en San Isidro, contamos con un amplio catalogo de autos de alta gama para la comercializacion inmediata. Tenemos mas de 45 años de historia y experiencia en el rubro automotor</p>
+            <h1 class="font-weight-light">Hascar</h1>
+            <p>Hola! Somos Hascar un consecionario de autos de lijo importados, contamos con dos sedes una ubicada en Puerto Madero y otra en Olivos. Tenemos un amplio stock de autos, camionetas y motos de alta gama a la venta</p>
             <a class="btn btn-primary" href="#!">Contactanos!</a>
         </div>
     </div>
@@ -22,9 +22,9 @@
     <!-- Content Row-->
     <div class="row gx-4 gx-lg-5">
 
-        {% include 'core/card.html' with titulo="Tarjeta 1" %}
-        {% include 'core/card.html' with titulo="Tarjeta 2" %}
-        {% include 'core/card.html' with titulo="Tarjeta 3" %}
+        {% include 'core/card.html' with titulo="Puerto Madero" %}
+        {% include 'core/card.html' with titulo="Olivos" %}
+        
 
     </div>
 
