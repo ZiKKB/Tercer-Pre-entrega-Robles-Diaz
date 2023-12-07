@@ -8,3 +8,9 @@ def view_autos(request):
     auto = models.Auto.objects.all()
     context = {"Autor" : auto}
     return render(request, "Producto/ver_autos.html", context)
+
+
+def view_autos(request):
+    auto = models.Auto.objects.all()
+    context = {"Auto" : auto}
+    return render(request, "Producto/ver_autos.html", context)

@@ -15,22 +15,22 @@ def home(request):
 
 
 
-def busqueda(request):
-    # búsqueda por nombre que contenga "dana"
-    cliente_nombre = models.Cliente.objects.filter(nombre__contains="dana")
+# def busqueda(request):
+#     # búsqueda por nombre que contenga "dana"
+#     cliente_nombre = models.Cliente.objects.filter(nombre__contains="dana")
 
-    # nacimientos mayores a 2000
-    cliente_nacimiento = models.Cliente.objects.filter(nacimiento__gt=date(2000, 1, 1))
+#     # nacimientos mayores a 2000
+#     cliente_nacimiento = models.Cliente.objects.filter(nacimiento__gt=date(2000, 1, 1))
 
-    # país de origen vacío (null - None)
-    cliente_pais = models.Cliente.objects.filter(pais_origen=None)
+#     # país de origen vacío (null - None)
+#     cliente_pais = models.Cliente.objects.filter(pais_origen=None)
 
-    context = {
-        "cliente_nombre": cliente_nombre,
-        "cliente_nacimiento": cliente_nacimiento,
-        "cliente_pais": cliente_pais,
-    }
-    return render(request, "cliente/busqueda.html", context)
+#     context = {
+#         "cliente_nombre": cliente_nombre,
+#         "cliente_nacimiento": cliente_nacimiento,
+#         "cliente_pais": cliente_pais,
+#     }
+#     return render(request, "cliente/busqueda.html", context)
 
 
 from . import forms
@@ -50,11 +50,11 @@ def crear(request):
 
 def autos_stock(request):
 
-    c1 = models.Auto(marca="FORD", modelo="FOCUS", color="negro")
+    c1 = models.Auto(marca="", modelo="", color="")
     
     c1.save()
 
-    return redirect("cliente:index")
+    return redirect("producto:index")
 
 
 def view_autos(request):
